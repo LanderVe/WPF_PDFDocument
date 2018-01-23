@@ -43,6 +43,7 @@ namespace WPF_PDFDocument.Controls
 
       if (!string.IsNullOrEmpty(pdfDrawer.PdfPath))
       {
+        //making sure it's an absolute path
         var path = System.IO.Path.GetFullPath(pdfDrawer.PdfPath);
 
         StorageFile.GetFileFromPathAsync(path).AsTask()
@@ -73,7 +74,7 @@ namespace WPF_PDFDocument.Controls
       {
         using (var page = pdfDoc.GetPage(i))
         {
-          var bitmap = await PageToBitmapAsync(pdfDoc, page);
+          var bitmap = await PageToBitmapAsync(page);
           var image = new Image
           {
             Source = bitmap,
@@ -86,7 +87,7 @@ namespace WPF_PDFDocument.Controls
       }
     }
 
-    private static async Task<BitmapImage> PageToBitmapAsync(PdfDocument pdfDoc, PdfPage page)
+    private static async Task<BitmapImage> PageToBitmapAsync(PdfPage page)
     {
       BitmapImage image = new BitmapImage();
 
@@ -102,5 +103,6 @@ namespace WPF_PDFDocument.Controls
 
       return image;
     }
+
   }
 }
