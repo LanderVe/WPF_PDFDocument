@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_PDFDocument", "WPF_PDFDocument\WPF_PDFDocument.csproj", "{3A32B930-BAFC-49CB-8E52-F8F59B3D1FA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A32B930-BAFC-49CB-8E52-F8F59B3D1FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A32B930-BAFC-49CB-8E52-F8F59B3D1FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A32B930-BAFC-49CB-8E52-F8F59B3D1FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A32B930-BAFC-49CB-8E52-F8F59B3D1FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BDF00F2-BC13-4AD6-8547-532ED6508150}
+	EndGlobalSection
+EndGlobal
